@@ -40,7 +40,7 @@ function uploadAndClassifyImage(){
         console.log(response);
         const obj = JSON.parse(response);
         document.getElementById('result').textContent = response;
-        document.getElementById('class').textContent = classes[obj.predicted];
+        // document.getElementById('class').textContent = classes[obj.predicted];
     })
     .fail(function() {alert("There was an error while sending prediction request to resnet34 model."); });
 };
